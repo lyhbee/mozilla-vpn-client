@@ -159,39 +159,39 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Download Wasm-chrome
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Wasm-Chrome
           # Destination path
           path: _site
 
       - name: Download Docs
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: doxygen-docs
           # Destination path
           path: _site/docs
 
       - name: Download a Addons Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Addons
           path: _site/addons
 
       - name: Download the Logviewer Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Logviewer
           path: _site/logviewer
 
       - name: Download the AddonStats Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: AddonStats
           path: _site/addonstats
 
       - name: Download a Inspector Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Inspector Build
           path: _site/inspector
