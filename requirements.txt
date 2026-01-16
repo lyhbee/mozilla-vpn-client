@@ -13,3 +13,4 @@ pyrsistent
 PyYAML
 yamllint
 aqtinstall==3.1.7
+werkzeug>=3.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
